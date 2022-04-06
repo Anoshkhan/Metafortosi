@@ -220,14 +220,14 @@ img{
 		background-color: rgba(0, 0, 0, 0.07);
 	}
 	.showcase-text{
-		padding: 20px 30px;
+		padding: 15px 20px;
 	}
 	.showcase-form{
 		width: 100%;
-		margin: 0px 30px;
+		margin: 0px 20px;
 	}
 	.cli img{
-		width: 95%;
+		width: 100%;
 	}
 	.cli .grid > *:first-child{
 	grid-column: 1 / span 1;
