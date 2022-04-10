@@ -54,6 +54,9 @@
 	background-color: var(--dark-color);
 	color:#fff ;
 }
+.bg-light{
+	background-color: var(--second-color);
+}
 .btn-primary{
 	background-color: var(--primary-color);
 	color: white;
