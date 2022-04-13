@@ -44,7 +44,24 @@
 .text-center{
 	text-align: center;
 }
-
+/* alerts */
+.alert{
+	background-color: var(--second-color);
+	padding: 10px 20px;
+	font-weight: bold;
+	margin: 15px 0;
+}
+.alert i{
+	margin-right: 10px;
+}
+.alert-success{
+	background-color: var(--success-color);
+	color: white;
+}
+.alert-error{
+	background-color: var(--error-color);
+	color: white;
+}
 /* bg color*/
 .bg-primary{
 	background-color: var(--primary-color);
@@ -67,6 +84,13 @@
 }
 .bg-dark a{
 	color: #fff;
+}
+/* text colors */
+.text-primary{
+	color: var(--primary-color);
+}
+.text-secondary{
+	color: var(--second-color);
 }
 /*margins classes */
 .my-1{
