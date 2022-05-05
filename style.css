@@ -89,6 +89,9 @@ pre{
 	gap: 30px;
 	overflow: visible;
 }
+.showcase-text{
+	animation: slideInFromLeft 1s ease-in;
+}
 .showcase-form{
 	position: relative;
 	top: 60px;
@@ -97,6 +100,7 @@ pre{
 	padding: 40px;
 	z-index: 100;
 	justify-self: flex-end;
+	animation: slideInFromRight 1s ease-in;
 
 }
 .showcase-form .form-control{
@@ -131,7 +135,9 @@ pre{
 /* stats section */
 .stats{
 	padding-top: 150px;
+	animation: slideInFromBottom 1s ease-in;
 }
+
 /* cli section */
 .cli .grid{
 	grid-template-columns: repeat(3, 1fr);
@@ -222,6 +228,43 @@ pre{
 .footer nav{
 	padding: 0 100px;
 }
+/* Animations */
+@keyframes slideInFromLeft{
+	0%{
+		transform: translateX(-100px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+
+}
+@keyframes slideInFromRight{
+	0%{
+		transform: translateX(100px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+	
+}
+@keyframes slideInFromTop{
+	0%{
+		transform: translateY(-100px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+	
+}
+@keyframes slideInFromBottom{
+	0%{
+		transform: translateY(100px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+	
+}
 /*Media Queries starting from here */
 
 /* Tablet */
@@ -248,10 +291,12 @@ pre{
 		text-align: center;
 		margin-top: 40px;
 		padding: 20px 30px;
+		animation: slideInFromTop 1s ease-in;
 	}
 	.showcase-form{
 		justify-self: center;
 		margin: auto;
+		animation: slideInFromBottom 1s ease-in;
 	}
 	.footer nav{
 	padding: 5px 0px;
